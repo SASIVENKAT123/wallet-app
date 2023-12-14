@@ -149,7 +149,7 @@ def get_accounts_emoney_using_wallet_id(wallet):
         return None
 
 
-@anvil.server.background_task
+"""@anvil.server.background_task
 def refresh_transaction_limit():
     # Set the transaction limit to 100,000 every 24 hours
     while True:
@@ -166,7 +166,7 @@ def refresh_transaction_limit():
                 users_table.update(user_record)
 
 # Start the background task
-refresh_transaction_limit()
+refresh_transaction_limit()"""
 @anvil.server.callable
 def add_query(query):
   row=app_tables.sevices.add_row(Query=query)

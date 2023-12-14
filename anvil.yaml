@@ -3,7 +3,7 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: Home}
+startup: {type: form, module: service}
 package_name: Wallet_App
 allow_embedding: false
 name: Wallet App
