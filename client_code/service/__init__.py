@@ -36,17 +36,6 @@ class service(serviceTemplate):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     query=self.text_box_1.text
-    user_info = app_tables.users.search(username=self.user['username']).get()
+   
     anvil.server.call("add_query",query)
-    if user_info:
-            # Update the "service" table with the query and user information
-            app_tables.service.add_row(
-                username=user_info['username'],
-                phone=user_info['phone']
-            )
-            alert("Your query has been submitted and our Technical Executive will get in touch with you")
-    else:
-      
     
-
- 
