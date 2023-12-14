@@ -39,6 +39,11 @@ components:
     properties: {text: Career, align: center, bold: true, foreground: '#000', font_size: 18}
     type: Link
     layout_properties: {grid_position: 'RQYEAC,BTDIEG'}
+  - name: link_1
+    properties: {text: Help, bold: true, foreground: black, font_size: 16}
+    type: Link
+    layout_properties: {grid_position: 'RQYEAC,XNOEAI'}
+    event_bindings: {click: link_1_click}
   - name: link_1_copy_4_copy_1_copy_1_copy_1
     properties: {role: selected, url: '', align: center, tooltip: '', border: '',
       foreground: '#000000', visible: true, text: Log out, font_size: 16, wrap_on: mobile,

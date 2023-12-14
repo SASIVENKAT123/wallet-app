@@ -3,7 +3,7 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: service}
+startup: {type: form, module: Home}
 package_name: Wallet_App
 allow_embedding: false
 name: Wallet App
@@ -137,14 +137,14 @@ db_schema:
     client: full
     server: full
     columns:
-    - name: name
-      admin_ui: {width: 200, order: 0}
+    - name: username
+      admin_ui: {order: 0, width: 200}
       type: string
     - name: Query
       admin_ui: {order: 3, width: 200}
       type: string
-    - name: number
-      admin_ui: {width: 200, order: 2}
+    - name: phone
+      admin_ui: {order: 2, width: 200}
       type: number
     title: Sevices
 renamed: true
