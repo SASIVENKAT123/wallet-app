@@ -167,6 +167,9 @@ def refresh_transaction_limit():
 
 # Start the background task
 refresh_transaction_limit()
+@anvil.server.callable
+def add_query(query):
+  row=app_tables.sevices.add_row(Query=query)
 
 
 

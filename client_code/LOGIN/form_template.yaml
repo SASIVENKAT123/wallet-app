@@ -98,7 +98,7 @@ components:
       layout_properties: {row: YZSGZO, width_xs: 12, col_xs: 0}
     - name: label_8_copy
       properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'New user ?', font_size: 16, font: '', spacing_above: small,
+        visible: true, text: 'Existing user?', font_size: 16, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
         underline: true, icon: ''}
       type: Label
@@ -151,7 +151,7 @@ components:
       layout_properties: {row: QTSQGX, width_xs: 12, col_xs: 0}
     - type: Label
       properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'Existing user ?', font_size: 16, font: '', spacing_above: small,
+        visible: true, text: 'New user?', font_size: 16, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
         underline: false, icon: ''}
       name: label_8

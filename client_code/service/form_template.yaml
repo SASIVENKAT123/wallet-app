@@ -5,8 +5,8 @@ container:
     role: null, html: ''}
 components:
 - type: ColumnPanel
-  properties: {role: outlined-card, col_widths: '{"XNGELW":40,"LHCCER":20}', background: 'theme:On
-      Primary'}
+  properties: {role: outlined-card, col_widths: '{}', background: 'theme:On Primary',
+    foreground: ''}
   name: outlined_card_2
   layout_properties: {slot: default}
   components:
@@ -71,14 +71,28 @@ components:
         type: Button
         layout_properties: {grid_position: 'JXFFNM,GIPCOP'}
         event_bindings: {click: button_3_click}
+  - name: image_1
+    properties: {source: 'https://www.openprovider.com/_next/image?url=https%3A%2F%2Fassets.openprovider.com%2Fwp-content%2Fuploads%2F2022%2F10%2Fcustomer-supp-blog-1200x300-1.png&w=3840&q=75',
+      display_mode: shrink_to_fit, background: '#237cb2'}
+    type: Image
+    layout_properties: {grid_position: 'PFTIWP,AFJSLA', full_width_row: true}
   - name: spacer_1
-    properties: {height: 51.25}
+    properties: {height: 42.79998779296875}
     type: Spacer
-    layout_properties: {grid_position: 'FPAAVI,JQZPUV'}
-  - type: Spacer
-    properties: {height: 17}
-    name: spacer_4
-    layout_properties: {grid_position: 'XKDXHI,XNGELW'}
+    layout_properties: {grid_position: 'JBAUKI,SCGNGK'}
+  - name: label_1
+    properties: {italic: true, text: 'what''s Your Query?'}
+    type: Label
+    layout_properties: {grid_position: 'BLOAKS,ATUAVD'}
+  - name: text_box_1
+    properties: {background: white}
+    type: TextBox
+    layout_properties: {grid_position: 'QVJXLJ,DGKAIB'}
+  - name: button_1
+    properties: {text: Submit, background: '#1f82be', foreground: white, bold: true}
+    type: Button
+    layout_properties: {grid_position: 'OUZOMI,ORVQNC'}
+    event_bindings: {click: button_1_click}
   - name: spacer_5
     properties: {height: 72.25}
     type: Spacer
