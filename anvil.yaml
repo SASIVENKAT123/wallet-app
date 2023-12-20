@@ -70,6 +70,9 @@ db_schema:
     - name: last_login
       admin_ui: {width: 200, order: 16}
       type: date
+    - name: limit
+      admin_ui: {width: 200}
+      type: string
     title: users
   accounts:
     client: full
