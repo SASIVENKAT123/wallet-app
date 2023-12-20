@@ -29,7 +29,7 @@ components:
       name: label_7_copy_2
     - properties: {height: 58.19996643066406}
       type: Spacer
-      layout_properties: {width: 342.38698779296874}
+      layout_properties: {width: 297.375}
       name: spacer_3
     - properties: {background: white, col_widths: '{"FKFVNM":25,"LDONGM":10,"EKRNNM":5,"CLCQWK":5,"VLVRBN":5,"GIPCOP":10}',
         col_spacing: medium}
