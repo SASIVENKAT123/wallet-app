@@ -5,64 +5,58 @@ container:
     role: null, html: ''}
 components:
 - type: ColumnPanel
-  properties: {role: outlined-card}
-  name: outlined_card_1
-  layout_properties: {slot: default}
-  components:
-  - name: outlined_card_1_copy_4_copy_1_copy_1_copy_1_copy_1
-    properties: {role: outlined-card, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-      spacing_below: small, background: '#3FE5FF'}
-    type: ColumnPanel
-    layout_properties:
-      col_widths: {}
-      grid_position: AGBLRF,ZFMLVH
-      full_width_row: true
-    components:
-    - name: image_1_copy_4_copy_1_copy_1_copy_1_copy_1
-      properties: {role: null, vertical_align: center, height: 52.36363220214844,
-        tooltip: '', border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-        spacing_above: small, source: _/theme/G-logo.jpg, spacing_below: small, background: '',
-        horizontal_align: center}
-      type: Image
-      layout_properties: {grid_position: 'RQYEAC,KWAVZI'}
-    - name: link_8
-      properties: {role: null, url: '', align: center, tooltip: '', border: '', foreground: '#000',
-        visible: true, text: Home, font_size: 18, wrap_on: mobile, font: '', col_spacing: medium,
-        spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
-        italic: false, background: '', bold: true, underline: false, icon: 'fa:home'}
-      type: Link
-      layout_properties: {grid_position: 'RQYEAC,GQVXCD'}
-      event_bindings: {click: link_8_click}
-    - name: link_9
-      properties: {role: null, url: '', align: center, tooltip: '', border: '', foreground: '#000',
-        visible: true, text: About, font_size: 17, wrap_on: mobile, font: '', col_spacing: medium,
-        spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
-        italic: false, background: '', bold: true, underline: false, icon: ''}
-      type: Link
-      layout_properties: {grid_position: 'RQYEAC,ZXILIZ'}
-    - name: link_12
-      properties: {role: null, url: '', align: center, tooltip: '', border: '', foreground: '#000',
-        visible: true, text: User Support, font_size: 18, wrap_on: mobile, font: '',
-        col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-        spacing_below: small, italic: false, background: '', bold: true, underline: false,
-        icon: ''}
-      type: Link
-      layout_properties: {grid_position: 'RQYEAC,BTDIEG'}
-    - name: link_1_copy_4_copy_1_copy_1_copy_1_copy_1
-      properties: {role: selected, url: '', align: center, tooltip: '', border: '',
-        foreground: '#000000', visible: true, text: Log out, font_size: 16, wrap_on: mobile,
-        font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-        spacing_below: small, italic: false, background: '', bold: true, underline: false,
-        icon: 'fa:user'}
-      type: Link
-      layout_properties: {grid_position: 'RQYEAC,FVDCJP'}
-      event_bindings: {click: link_1_click}
-- type: ColumnPanel
   properties: {role: outlined-card, col_widths: '{}'}
   name: outlined_card_2
   layout_properties: {slot: default}
   components:
+  - name: flow_panel_1
+    properties: {}
+    type: FlowPanel
+    layout_properties: {grid_position: 'QJPOVR,RFLMAJ', full_width_row: true}
+    components:
+    - name: image_1_copy
+      properties: {role: null, vertical_align: center, height: 44.80000305175781,
+        tooltip: '', border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
+        spacing_above: small, source: _/theme/GW-logo.jpg, spacing_below: small, background: white,
+        horizontal_align: right}
+      type: Image
+      layout_properties: {width: 89.19999694824219}
+    - name: label_7_copy_2
+      properties: {text: 'G-Wallet         ', font_size: 25, align: left, bold: true,
+        font: a, italic: false, underline: false, foreground: black}
+      type: Label
+      layout_properties: {}
+    - name: spacer_4_copy
+      properties: {height: 46.75}
+      type: Spacer
+      layout_properties: {width: 285}
+    - name: column_panel_1
+      properties: {background: white, col_widths: '{"FKFVNM":26,"LDONGM":11,"EKRNNM":9,"DAOHBK":12}',
+        col_spacing: medium}
+      type: ColumnPanel
+      layout_properties: {width: 833.1500244140625, expand: true}
+      components:
+      - name: link_8_copy
+        properties: {text: Home, align: right, bold: false, foreground: '#000', font_size: 15}
+        type: Link
+        layout_properties: {grid_position: 'JXFFNM,FKFVNM'}
+        event_bindings: {click: link_8_copy_click}
+      - name: link_9_copy
+        properties: {text: About, align: center, bold: false, foreground: black, font_size: 15,
+          col_spacing: tiny}
+        type: Link
+        layout_properties: {grid_position: 'JXFFNM,LDONGM'}
+      - name: link_10_copy
+        properties: {text: User Support, bold: false, align: center, foreground: black,
+          font_size: 15, background: white}
+        type: Link
+        layout_properties: {grid_position: 'JXFFNM,EKRNNM', full_width_row: true}
+        event_bindings: {click: link_10_copy_click}
+      - name: button_8
+        properties: {text: Logout, role: filled-button, background: '#1d86da'}
+        type: Button
+        layout_properties: {grid_position: 'JXFFNM,DAOHBK'}
+        event_bindings: {click: button_8_click}
   - type: Image
     properties: {role: null, vertical_align: center, height: '200', tooltip: '', border: '',
       foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,

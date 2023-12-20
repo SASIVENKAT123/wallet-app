@@ -7,13 +7,13 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class account_management(account_managementTemplate):
-  def __init__(self, **properties):
+  def __init__(self, user= None, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
     self.button_1.visible = False
-       
-
+    self.user =user
+    mail= self.user['email']
+    print(mail)
     self.refresh_users()
 
   def refresh_users(self, username_filter=None):

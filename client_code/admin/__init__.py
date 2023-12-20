@@ -13,6 +13,7 @@ class admin(adminTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.user = user
+    mail = self.user['email']
     if user is not None:
             self.label_1.text = f"Welcome to Green Gate Financial, {user['username']}"
     else:
@@ -28,7 +29,7 @@ class admin(adminTemplate):
         show_users_form = open_form('admin.user_management')
 
   def button_5_click(self, **event_args):
-   open_form('admin.account_management')
+    open_form('admin.account_management', user= self.user)
 
   def link_8_click(self, **event_args):
    open_form('admin')
@@ -53,6 +54,18 @@ class admin(adminTemplate):
     # Open the admin.user_support form and pass the serves_data
     user_support_form = open_form('admin.user_support', serves_data=serves_data)
 
+  def button_8_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Home')
+
+  def link_10_copy_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('admin.user_support')
+
+  def link_8_copy_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('admin')
+   
 
 
  

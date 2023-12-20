@@ -9,6 +9,7 @@ class admin_view(admin_viewTemplate):
     def __init__(self, user_data=None, **properties):
         self.init_components(**properties)
         self.edit_mode = False 
+      
         self.text_box_8.visible = False
         self.text_box_10.visible = False
         self.text_box_9.visible = False
@@ -107,7 +108,7 @@ class admin_view(admin_viewTemplate):
               alert("User and associated information deleted successfully.", title="Success")
 
               # Log deletion action to 'actions' table
-              self.log_action(username, changes_made)
+              self.log_action(self.user['username'], changes_made)
       
               # Clear textboxes after deletion
               self.clear_textboxes()
@@ -189,7 +190,7 @@ class admin_view(admin_viewTemplate):
 
                 # Log changes to 'actions' table if changes were made
                 if changes_made:
-                    self.log_action(username, changes_made)
+                    self.log_action(self.user['username'], changes_made)
 
 
                 alert("Changes saved successfully.", title="Success")
@@ -255,7 +256,7 @@ class admin_view(admin_viewTemplate):
 
             # Log action to 'actions' table
             action = f"User '{username}' is frozen" if new_state else f"User '{username}' is unfrozen"
-            self.log_action(username, [action])
+            self.log_action(self.user['username'], [action])
 
             # Update button text based on the new state
             self.button_5.text = "Unfreeze" if new_state else "Freeze"
