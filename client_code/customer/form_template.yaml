@@ -21,14 +21,14 @@ components:
   - name: spacer_3_copy
     properties: {height: 58.19996643066406}
     type: Spacer
-    layout_properties: {width: 787.297}
+    layout_properties: {width: 420.67499999999995}
   - name: column_panel_1
     properties: {foreground: '', col_spacing: none, col_widths: '{"DZACHX":9,"EQLJSK":9,"IYMZZI":9,"QMIILD":9,"PIMIYE":8,"YSLIKN":6,"LADGEM":10}'}
     type: ColumnPanel
     layout_properties: {width: 700, expand: false}
     components:
     - name: link_2
-      properties: {text: Deposit, align: center, bold: true, foreground: black, font_size: 18}
+      properties: {text: Deposit, align: center, bold: true, foreground: black, font_size: 14}
       type: Link
       layout_properties: {grid_position: 'MNPBPI,DZACHX'}
       event_bindings: {click: link_2_click}
@@ -100,7 +100,7 @@ components:
   - name: image_3
     properties: {height: 263.1999816894531, source: 'https://www.temenos.com/wp-content/uploads/2023/05/Genie-Wallet-pic1-768x432.png'}
     type: Image
-    layout_properties: {x: 1291.171875, y: 0, width: 411.1875}
+    layout_properties: {x: 1037.612548828125, y: 0, width: 411.1875}
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '#2270ad',
     visible: true, text: '', font_size: 23, font: a, spacing_above: small, icon_align: left,
