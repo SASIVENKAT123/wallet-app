@@ -118,6 +118,7 @@ components:
       name: text_box_1
       layout_properties: {row: OOCCMJ, width_xs: 5, col_xs: 6}
       data_bindings: []
+      event_bindings: {pressed_enter: text_box_1_pressed_enter}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: 'Enter Your Password:', font_size: null, font: '', spacing_above: small,
